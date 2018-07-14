@@ -1,0 +1,42 @@
+name: jphp-controlsfx-ext
+version: 1.0.0
+
+plugins:
+- Hub
+- Doc
+- Gradle
+
+deps:
+  jphp-runtime: '*'
+  jphp-gui-ext: '*'
+
+devDeps:
+  jphp-core: '*'
+  dn-bundle-plugin: '*'
+
+
+gradle:
+  deps:
+  - org.controlsfx:controlsfx:8.40.14
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+  - /build
+  - /jars/**
+  - /out/**
+
+develnext-bundle:
+  version: 1.0.0
+  name: ControlsFX
+  author: broelik
+  icon: "develnext/bundle/controlsfx/icon32.png"
+  description: "Пакет для работы с графиками"
+  group: "network"
+  class: "develnext\\bundle\\controlsfx\\ControlsFXBundle"
