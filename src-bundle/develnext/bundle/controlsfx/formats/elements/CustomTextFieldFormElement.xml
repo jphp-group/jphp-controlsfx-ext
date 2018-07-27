@@ -1,0 +1,6 @@
+<element extends="TextInputControlFormElement">
+    <properties>
+        <property code="left" name="Левая часть" editor="image" virtual="1" />
+        <property code="right" name="Правая часть" editor="image" virtual="1" />
+    </properties>
+</element>

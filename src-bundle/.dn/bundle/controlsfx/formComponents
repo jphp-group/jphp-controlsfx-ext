@@ -1,0 +1,13 @@
+develnext\bundle\controlsfx\formats\elements\ToggleSwitchFormElement
+develnext\bundle\controlsfx\formats\elements\PlusMinusSliderFormElement
+develnext\bundle\controlsfx\formats\elements\RangeSliderFormElement
+develnext\bundle\controlsfx\formats\elements\CustomTextFieldFormElement
+develnext\bundle\controlsfx\formats\elements\CustomPasswordFieldFormElement
+develnext\bundle\controlsfx\formats\elements\RatingFormElement
+
+develnext\bundle\controlsfx\formats\tags\ToggleSwitchFormElementTag
+develnext\bundle\controlsfx\formats\tags\PlusMinusSliderFormElementTag
+develnext\bundle\controlsfx\formats\tags\RangeSliderFormElementTag
+develnext\bundle\controlsfx\formats\tags\CustomTextFieldFormElementTag
+develnext\bundle\controlsfx\formats\tags\CustomPasswordFieldFormElementTag
+develnext\bundle\controlsfx\formats\tags\RatingFormElementTag

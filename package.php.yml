@@ -1,5 +1,5 @@
 name: jphp-controlsfx-ext
-version: 1.0.0
+version: 1.0.3
 
 plugins:
 - Hub
@@ -29,14 +29,15 @@ config:
   - /bundle/**
   - /src-bundle/**
   - /build
-  - /jars/**
   - /out/**
+  - /examples/**
+  - /dn-sources/**
 
 develnext-bundle:
-  version: 1.0.0
+  version: 1.0.4
   name: ControlsFX
   author: broelik
   icon: "develnext/bundle/controlsfx/icon32.png"
-  description: "Пакет для работы с графиками"
-  group: "network"
+  description: "Пакет добавляет новые компоненты JavaFX"
+  group: "other"
   class: "develnext\\bundle\\controlsfx\\ControlsFXBundle"

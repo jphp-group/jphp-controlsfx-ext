@@ -1,0 +1,16 @@
+<element extends="NodeFormElement">
+    <properties>
+        <property code="orientation" name="Ориентация" editor="enum">
+            <variants>
+                <variant value="HORIZONTAL">Горизонтальная</variant>
+                <variant value="VERTICAL">Вертикальная</variant>
+            </variants>
+        </property>
+        <property code="partialRating" name="Частичный рейтинг" editor="boolean" />
+        <property code="updateOnHover" name="Обновлять при наведении" editor="boolean" />
+
+        <property code="max" name="Максимальный рейтинг" editor="integer" />
+
+        <property code="rating" name="Рейтинг" editor="float" />
+    </properties>
+</element>

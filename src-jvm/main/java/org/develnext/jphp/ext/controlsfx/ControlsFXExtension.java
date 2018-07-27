@@ -1,18 +1,18 @@
 package org.develnext.jphp.ext.controlsfx;
 
 import org.controlsfx.control.*;
-import org.develnext.jphp.ext.controlsfx.classes.UXPlusMinusEvent;
+import org.controlsfx.control.textfield.CustomPasswordField;
+import org.controlsfx.control.textfield.CustomTextField;
+import org.develnext.jphp.ext.controlsfx.event.UXPlusMinusEvent;
 import org.develnext.jphp.ext.controlsfx.classes.cell.UXGridCell;
 import org.develnext.jphp.ext.controlsfx.classes.control.*;
 import org.develnext.jphp.ext.controlsfx.support.event.NotificationPaneEventProvider;
 import org.develnext.jphp.ext.controlsfx.support.event.PlusMinusSliderEventProvider;
 import org.develnext.jphp.ext.controlsfx.support.memory.ArrowLocationMemoryOperation;
-import org.develnext.jphp.ext.controlsfx.support.memory.SnapshotViewBoundaryMemoryOperation;
 import org.develnext.jphp.ext.javafx.support.EventProvider;
 import php.runtime.env.CompileScope;
 import php.runtime.ext.support.Extension;
 import php.runtime.memory.support.MemoryOperation;
-import sun.reflect.generics.scope.Scope;
 
 public class ControlsFXExtension extends Extension {
     public static final String NS = "php\\gui\\controlsfx";
@@ -47,6 +47,9 @@ public class ControlsFXExtension extends Extension {
         // registerWrapperClass(scope, SnapshotView.class, UXSnapshotView.class);
         registerWrapperClass(scope, StatusBar.class, UXStatusBar.class);
         registerWrapperClass(scope, ToggleSwitch.class, UXToggleSwitch.class);
+
+        registerWrapperClass(scope, CustomTextField.class, UXCustomTextField.class);
+        registerWrapperClass(scope, CustomPasswordField.class, UXCustomPasswordField.class);
 
         registerWrapperClass(scope, PopOver.class, UXPopOver.class);
     }

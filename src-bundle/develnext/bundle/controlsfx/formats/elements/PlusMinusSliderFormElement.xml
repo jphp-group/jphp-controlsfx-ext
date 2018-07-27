@@ -1,0 +1,13 @@
+<element extends="NodeFormElement" >
+    <properties>
+        <property code="orientation" name="Ориентация" editor="enum">
+            <variants>
+                <variant value="HORIZONTAL">Горизонтальная</variant>
+                <variant value="VERTICAL">Вертикальная</variant>
+            </variants>
+        </property>
+    </properties>
+    <eventTypes>
+        <eventType code="valueChanged" name="Изменение" kind="ActionEvent" icon="icons/ok16.png" />
+    </eventTypes>
+</element>
