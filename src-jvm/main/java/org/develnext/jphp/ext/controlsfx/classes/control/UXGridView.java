@@ -34,27 +34,25 @@ public class UXGridView extends UXControl<GridView> {
     public void __construct(){
         __wrappedObject = new GridView<>();
     }
+
     @Reflection.Signature
+    @SuppressWarnings("unchecked")
     public void setCellFactory(Environment env, Invoker invoker){
         if(invoker == null){
             getWrappedObject().setCellFactory(null);
         }
         else{
-            getWrappedObject().setCellFactory((grid) -> {
-                GridCell cell = new GridCell(){
-                    @Override
-                    protected void updateItem(Object item, boolean empty) {
-                        if(empty){
-                            setGraphic(null);
-                            setText(null);
-                        }
-                        else{
-                            invoker.callAny(new UXGridCell(env, this), item);
-                        }
+            getWrappedObject().setCellFactory((grid) -> new GridCell(){
+                @Override
+                protected void updateItem(Object item, boolean empty) {
+                    if(empty){
+                        setGraphic(null);
+                        setText(null);
                     }
-                };
-
-                return cell;
+                    else{
+                        invoker.callAny(new UXGridCell(env, this), item);
+                    }
+                }
             });
         }
     }

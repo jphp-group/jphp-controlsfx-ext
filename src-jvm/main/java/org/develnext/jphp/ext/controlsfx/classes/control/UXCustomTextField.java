@@ -10,11 +10,12 @@ import php.runtime.reflection.ClassEntity;
 
 @Reflection.Namespace(ControlsFXExtension.NS)
 @Reflection.Name("UXCustomTextField")
-public class UXCustomTextField extends UXTextField<CustomTextField> {
-    public UXCustomTextField(Environment env, CustomTextField wrappedObject) {
+public class UXCustomTextField extends UXTextField<CustomTextField>{
+    public UXCustomTextField(Environment env, CustomTextField wrappedObject){
         super(env, wrappedObject);
     }
-    public UXCustomTextField(Environment env, ClassEntity clazz) {
+
+    public UXCustomTextField(Environment env, ClassEntity clazz){
         super(env, clazz);
     }
 
@@ -23,21 +24,24 @@ public class UXCustomTextField extends UXTextField<CustomTextField> {
         __wrappedObject = new CustomTextField();
     }
 
+
     @Reflection.Setter
-    public void setLeft(@Reflection.Nullable Node node) {
+    public void setLeft(@Reflection.Nullable Node node){
         getWrappedObject().setLeft(node);
     }
+
     @Reflection.Getter
-    public Node getLeft() {
+    public Node getLeft(){
         return getWrappedObject().getLeft();
     }
 
     @Reflection.Setter
-    public void setRight(@Reflection.Nullable Node node) {
+    public void setRight(@Reflection.Nullable Node node){
         getWrappedObject().setRight(node);
     }
+
     @Reflection.Getter
-    public Node getRight() {
-        return getWrappedObject().getLeft();
+    public Node getRight(){
+        return getWrappedObject().getRight();
     }
 }

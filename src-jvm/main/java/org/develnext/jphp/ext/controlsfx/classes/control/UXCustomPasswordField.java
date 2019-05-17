@@ -48,6 +48,6 @@ public class UXCustomPasswordField extends UXPasswordField {
     }
     @Reflection.Getter
     public Node getRight() {
-        return getWrappedObject().getLeft();
+        return getWrappedObject().getRight();
     }
 }

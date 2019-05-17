@@ -1,5 +1,5 @@
 name: jphp-controlsfx-ext
-version: 1.0.3
+version: 1.0.5
 
 plugins:
 - Hub
@@ -34,7 +34,7 @@ config:
   - /dn-sources/**
 
 develnext-bundle:
-  version: 1.0.4
+  version: 1.0.5
   name: ControlsFX
   author: broelik
   icon: "develnext/bundle/controlsfx/icon32.png"
